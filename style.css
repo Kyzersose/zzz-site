@@ -54,7 +54,7 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
   flex-wrap: wrap; gap: 12px;
 }
-.nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--purple-soft); letter-spacing: 1px; }
+.nav-logo { font-family: 'Playfair Display', serif; font-size: clamp(13px, 3.5vw, 20px); color: var(--purple-soft); letter-spacing: 1px; }
 .nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
 .nav-link {
   font-size: 13px; color: var(--text-muted);
@@ -216,6 +216,29 @@ nav {
 .shush-body { font-size: 1rem; color: var(--text-main); line-height: 1.75; margin-bottom: 24px; }
 .shush-body em { font-style: italic; color: var(--purple-soft); }
 .shush-footer { font-size: 0.8rem; color: #5a5070; line-height: 1.7; }
+
+/* MOBILE */
+@media (max-width: 600px) {
+  nav { padding: 10px 16px; }
+  .nav-link { font-size: 11px; padding: 5px 8px; }
+
+  .hero { padding: 40px 20px; }
+  .cta-btn { width: 100%; max-width: 320px; padding: 18px 24px; }
+
+  .stats-section,
+  .testimonials-section,
+  .tips-section { padding: 60px 20px; }
+  .enemies-section,
+  .demands-section { padding: 60px 20px; }
+  .faq-section { padding: 60px 20px 32px; }
+  .article-section { padding: 60px 20px; }
+  .article-inner { padding: 20px 16px; }
+
+  .cite-modal-body { padding: 16px; }
+  .cite-tab { padding: 6px 10px; font-size: 11px; }
+
+  .shush-modal { padding: 40px 20px 36px; }
+}
 
 /* FOOTER */
 footer.footer { padding: 48px 24px; text-align: center; border-top: 1px solid rgba(255,255,255,.06); position: relative; z-index: 1; }
