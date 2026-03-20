@@ -54,7 +54,20 @@ function copyText(id, btn) {
   });
 }
 
+// Shush modal
+document.querySelector('.cta-btn').addEventListener('click', () => {
+  document.getElementById('shushOverlay').classList.add('open');
+});
+
+function closeShush() {
+  document.getElementById('shushOverlay').classList.remove('open');
+}
+
+function closeShushIfBg(e) {
+  if (e.target === document.getElementById('shushOverlay')) closeShush();
+}
+
 // Close modal on Escape key
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeCite();
+  if (e.key === 'Escape') { closeCite(); closeShush(); }
 });
