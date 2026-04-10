@@ -245,3 +245,6 @@ footer.footer { padding: 48px 24px; text-align: center; border-top: 1px solid rg
 .footer p { font-size: 13px; color: #5a5070; line-height: 1.8; }
 .footer p em { color: #3d3060; }
 .footer-logo { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--purple-mid); margin-bottom: 12px; }
+.footer-credit { margin-top: 20px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #3a2e55; }
+.footer-credit-link { color: #6b4fa0; text-decoration: none; transition: color 0.2s; }
+.footer-credit-link:hover { color: var(--purple-mid); }
